@@ -44,6 +44,16 @@ ul li a:hover {
     padding: 0.5rem;
 }
 
+div.burger-menu {
+    font-size: 1.8rem;
+    display: none;
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    flex-direction: column;
+    color: grey;
+}
+
 div.hero-section {
     background: #304353;
     padding: 10rem;
@@ -344,4 +354,167 @@ div.footer h6 {
     color: #88949B;
     font-size: 1rem;
     padding-top: 6rem;
+}
+
+@media screen and (max-width: 768px) {
+
+    div.nav-bar {
+        /* display: flex; */
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+        padding: 1.2rem;
+        width: 100vw;
+    }   
+
+    div.logo {
+        font-size: 1.2rem;
+    }
+
+    ul.nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-between;
+    }
+
+    ul.nav-links.active{
+        display: flex;    
+    }
+
+    ul li {
+        margin: 0;
+        font-size: 1rem;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    div.burger-menu {
+        display: flex;
+        cursor: pointer;
+        font-size: 1.7rem;
+        float: right;
+    }
+
+    div.hero-section {
+        padding: 6rem 2rem;
+    }
+
+    div.hero-content-heading h3 {
+        font-size: 1rem;
+        text-align: center;
+        text-transform: inherit;
+    }
+
+    div.hero-content-heading p {
+        font-size: 0.5rem;
+    }
+
+    div.hero-background {
+        padding: 4rem;
+    }
+
+    div.background {
+        padding: 9px 28px;
+        width: 300px;
+        height: 200px;
+    }
+
+    div.background h4 {
+        padding: 0.8rem;
+        font-size: 1rem;
+        
+    }
+
+    div.background p {
+        padding-left: 1rem;
+        font-size: 0.6rem;
+    }
+
+    div.hero-background-pos {
+        display: none;
+    }
+
+    div.snapshot-team {
+        padding: 2rem;
+        text-align: center;
+    }
+    
+    div.snapshot-team h2 {
+        font-size: 1.2rem;
+    }
+    
+    div.snapshot-team p {
+        font-size: 0.7rem;
+    }
+    
+    div.snapshot-box {
+        padding: 2rem 0rem;
+    }
+    
+    div.snapshot-box-content {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    div.box1 {
+        width: 200px;
+        height: 220px;
+    }
+    
+    div.box3 {
+        width: 200px;
+        height: 220px;
+    }
+   
+    div.gallery-section {
+        padding: 2rem;
+    }
+    
+    div.gallery-content h4 {
+        font-size: 1.2rem;
+    }
+    
+    div.gallery-content p {
+        font-size: 0.8rem;
+        padding: 0.8rem;
+    }
+
+    div.img img {
+        width: 200px;
+        height: 150px;
+    }
+
+    div.footer {
+        padding: 2rem;
+    }
+    
+    div.footer-content h4 {
+        font-size: 1.1rem;
+    }
+    
+    div.footer-content p {
+        font-size: 0.8rem;
+    }
+
+    input[type="text"] {
+        padding: 10px 20px;
+        width: 100%;
+    }
+    
+    input[type="email"] {
+        padding: 10px 20px;
+        width: 100%;
+    }
+
+    textarea {
+        width: 100%;
+        height: 150px;
+    }
+
+    div.footer h6 {
+        font-size: 0.8rem;
+        padding-top: 6rem;
+    }
 }
